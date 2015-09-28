@@ -18,7 +18,13 @@ h6, .h6 {
   color: #333;
 }
 
-
+h2 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+  font-size: 21px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #555;
+}
 /*
  * Override Bootstrap's default container.
  */
@@ -80,35 +86,49 @@ h6, .h6 {
 }
 
 /*
- * Blog name and description
- */
-
-.blog-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.blog-title {
-  margin-top: 30px;
-  margin-bottom: 0;
-  font-size: 60px;
-  font-weight: normal;
-}
-.blog-description {
-  font-size: 20px;
-  color: #999;
-}
-
-
-/*
  * Main column and sidebar layout
  */
-
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
+.blog-main img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.blog-sidebar {
+  padding-left: 30px;
+}
 
 /* Sidebar modules for boxing content */
+
+#subscribe-box {
+  padding: 15px 15px;
+  font-size: 15px;
+}
+#subscribe-box h4 {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  color: #666;
+  text-align: justify;
+}
+#subscribe-box p {
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+}
+#subscribe-box .form-group {
+  margin-top: 15px;
+}
+#subscribe-box .btn-warning {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f39c12;
+}
+#subscribe-box .btn-warning:hover {
+  background-color: #f0ad4e;
+}
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
@@ -117,6 +137,7 @@ h6, .h6 {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
+  border: 5px dashed #2ecc71;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -143,17 +164,40 @@ h6, .h6 {
  */
 
 .blog-post {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.blog-post-title a {
+  color: #555;
+}
+.blog-post-title a:hover {
+  color: #23527c;
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
+  color: #888;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
 }
-
+.blog-post-meta .btn-danger {
+  background-color: #e74c3c;
+  padding: 3px 5px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.blog-post-meta .btn-danger:hover {
+  background-color: #d2322d;
+}
 
 /*
  * Footer
@@ -168,4 +212,10 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/* Site-wide Styling */
+
+.center {
+  text-align: center;
 }
